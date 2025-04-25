@@ -227,7 +227,7 @@ export function Section() {
             className="group bg-slate-500 text-white hover:bg-gradient-to-tr
             hover:from-blue-500 hover:to-gray-700 hover:text-white hover:animate-pulse"
             onClick={() =>
-              (window.location.href = "https://linkedin.com/in/rafaelfarsura")
+              window.open("https://linkedin.com/in/rafaelfarsura", "_blank")
             }
           >
             <FileText className="mr-2 h-5 w-5 group-hover:animate-bounce " />
@@ -239,7 +239,7 @@ export function Section() {
             className="group text-black hover:bg-gradient-to-bl
             hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
             onClick={() =>
-              (window.location.href = "https://github.com/rafael-farsura")
+              window.open("https://github.com/rafael-farsura", "_blank")
             }
           >
             <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
@@ -250,14 +250,15 @@ export function Section() {
           <h2 className="text-2xl font-heading mb-4 animate-pulse">
             Projetos em Destaque
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <Card
               className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              onClick={() =>
-                (window.location.href =
-                  "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api")
-              }
-            >
+              onClick={() => window.open(
+                  "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api", 
+                  "_blank"
+                )
+              }>
+
               <CardHeader>
                 <Image
                   alt="Project preview"
@@ -275,23 +276,26 @@ export function Section() {
                 </p>
               </CardContent>
             </Card>
-            {/* <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <Card 
+            className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full"
+            
+            onClick={() => window.open("https://github.com/Rafael-Farsura/TaskPay", "_blank")}>
               <CardHeader>
                 <Image
                   alt="Project preview"
-                  src="/Images/placeholder.png"
-                  width={400}
-                  height={200}
+                  src="/Images/task-pay-logo.png"
+                  width={600}
+                  height={300}
                   className="rounded-lg hover:scale-105 transition-transform duration-300"
                 />
-                <CardTitle className="mt-4">API Gateway</CardTitle>
+                <CardTitle className="mt-4">Task Pay</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Sistema de microserviços com Nest.js
+                TaskPay é uma plataforma descentralizada que conecta freelancers a contratantes com pagamentos automatizados via Smart Contracts. Cada etapa (milestone) de um projeto é liberada somente após aprovação, oferecendo segurança e previsibilidade para ambas as partes.      
                 </p>
               </CardContent>
-            </Card> */}
+            </Card>
 
             {/* <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardHeader>
