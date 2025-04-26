@@ -253,12 +253,13 @@ export function Section() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
             <Card
               className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              onClick={() => window.open(
-                  "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api", 
+              onClick={() =>
+                window.open(
+                  "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api",
                   "_blank"
                 )
-              }>
-
+              }
+            >
               <CardHeader>
                 <Image
                   alt="Project preview"
@@ -275,11 +276,24 @@ export function Section() {
                   com lastro em USD.
                 </p>
               </CardContent>
+              <div className="mt-5">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="group text-black hover:bg-gradient-to-bl
+            hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
+                >
+                  <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
+                  GitHub
+                </Button>
+              </div>
             </Card>
-            <Card 
-            className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full"
-            
-            onClick={() => window.open("https://github.com/Rafael-Farsura/TaskPay", "_blank")}>
+            <Card
+              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full"
+              onClick={() =>
+                window.open("https://taskpay.vercel.app/", "_blank")
+              }
+            >
               <CardHeader>
                 <Image
                   alt="Project preview"
@@ -292,9 +306,30 @@ export function Section() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                TaskPay é uma plataforma descentralizada que conecta freelancers a contratantes com pagamentos automatizados via Smart Contracts. Cada etapa (milestone) de um projeto é liberada somente após aprovação, oferecendo segurança e previsibilidade para ambas as partes.      
+                  TaskPay é uma plataforma descentralizada que conecta
+                  freelancers a contratantes com pagamentos automatizados via
+                  Smart Contracts. Cada etapa (milestone) de um projeto é
+                  liberada somente após aprovação, oferecendo segurança e
+                  previsibilidade para ambas as partes.
                 </p>
               </CardContent>
+              <div className="mb-5">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="group text-black hover:bg-gradient-to-bl
+            hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
+                  onClick={() =>
+                    window.open(
+                      "https://github.com/rafael-farsura/TaskPay",
+                      "_blank"
+                    )
+                  }
+                >
+                  <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
+                  GitHub
+                </Button>
+              </div>
             </Card>
 
             {/* <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
