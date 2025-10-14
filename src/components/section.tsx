@@ -6,6 +6,8 @@ import {
   Database,
   ListTodo,
   FileText,
+  MessageCircleCodeIcon,
+  MailPlusIcon,
   Github,
 } from "lucide-react";
 import Image from "next/image";
@@ -21,337 +23,287 @@ import { Button } from "@/src/components/ui/button";
 
 export function Section() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-16 bg-background">
-      <div className="max-w-4xl w-full space-y-8">
-        <div className="text-center space-y-4">
+    <section className="flex flex-col items-center justify-center min-h-screen px-6 py-16 bg-background">
+      <div className="w-full max-w-6xl space-y-16 text-center">
+        {/* Título */}
+        <header className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold font-heading bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
             Full Stack Developer
           </h1>
           <p className="text-xl text-muted-foreground hover:animate-bounce">
             Especializado em Nest.js e Blockchain
           </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-          <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 ">
+        </header>
+
+        {/* Cards principais */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-stretch">
+          {/* Desenvolvimento */}
+          <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="font-heading flex items-center gap-2">
-                <Code className="h-5 w-5 " />
-                <p className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
-                  Desenvolvimento Web
-                </p>
+                <Code className="h-5 w-5" />
+                <span className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
+                  Desenvolvimento
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-3 text-left">
               <p className="text-muted-foreground">
-                Construo aplicações web robustas e escaláveis utilizando as
-                melhores práticas e tecnologias modernas.
+                Construo aplicações web e científicas robustas e escaláveis
+                utilizando as melhores práticas e tecnologias modernas.
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Nest.js
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Next.js
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  TypeScript
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Node.js
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  React
-                </Badge>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Nest.js",
+                  "Next.js",
+                  "TypeScript",
+                  "Node.js",
+                  "Express.js",
+                  "React",
+                  "C++",
+                  "Qt Creator",
+                ].map((item) => (
+                  <Badge key={item} variant="secondary">
+                    {item}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
           </Card>
+
+          {/* Blockchain */}
           <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="font-heading flex items-center gap-2">
                 <Blocks className="h-5 w-5" />
-                <p className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
                   Blockchain
-                </p>
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-3 text-left">
               <p className="text-muted-foreground">
                 Desenvolvimento de smart contracts e aplicações descentralizadas
                 com foco em segurança e eficiência.
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Solidity
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Web3.js
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Ethereum
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  DApps
-                </Badge>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Solidity",
+                  "Ethers.js",
+                  "Ethereum",
+                  "Hardhat",
+                  "Foundry",
+                  "ERC-20",
+                  "ERC-1400",
+                  "ERC-3643",
+                ].map((item) => (
+                  <Badge key={item} variant="secondary">
+                    {item}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
           </Card>
+
+          {/* Banco de Dados */}
           <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="font-heading flex items-center gap-2">
                 <Database className="h-5 w-5" />
-                <p className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
                   Banco de Dados
-                </p>
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-3 text-left">
               <p className="text-muted-foreground">
                 Projeto e gerencio bancos de dados relacionais com MySQL e
                 PostgreSQL, garantindo performance, segurança e escalabilidade.
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  MySQL
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  PostgreSQL
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  SQL
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  TypeORM
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Modelagem
-                </Badge>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "MySQL",
+                  "PostgreSQL",
+                  "MongoDB",
+                  "TypeORM",
+                  "Prisma",
+                  "Modelagem",
+                  "RBAC",
+                  "ABAC",
+                  "TBAC",
+                ].map((item) => (
+                  <Badge key={item} variant="secondary">
+                    {item}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
           </Card>
+
+          {/* Metodologias Ágeis */}
           <Card className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
             <CardHeader>
               <CardTitle className="font-heading flex items-center gap-2">
                 <ListTodo className="h-5 w-5" />
-                <p className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-orange-500 to-gray-700 bg-clip-text text-transparent animate-pulse">
                   Metodologias Ágeis
-                </p>
+                </span>
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-3 text-left">
               <p className="text-muted-foreground">
                 Aplico metodologias ágeis para otimizar processos de
-                desenvolvimento, aumentar produtividade e entregar valor de
-                forma consistente.
+                desenvolvimento e entregar valor de forma consistente.
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Scrum
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Kanban
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Sprint Planning
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Daily Standup
-                </Badge>
-                <Badge
-                  variant="secondary"
-                  className="hover:bg-secondary/80 transition-colors"
-                >
-                  Retrospectiva
-                </Badge>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Scrum",
+                  "Kanban",
+                  "Sprint Planning",
+                  "Daily",
+                  "Retrospectiva",
+                  "Review",
+                  "Liderança empática",
+                  "PDI - Plano de Desenvolvimento Individual",
+                ].map((item) => (
+                  <Badge key={item} variant="secondary">
+                    {item}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
           </Card>
         </div>
-        <div className="flex justify-center gap-4 mt-8">
+
+        {/* Botões */}
+        <div className="flex justify-center gap-6">
           <Button
             size="lg"
-            variant="default"
-            className="group bg-slate-500 text-white hover:bg-gradient-to-tr
-            hover:from-blue-500 hover:to-gray-700 hover:text-white hover:animate-pulse"
+            className="group bg-slate-600 text-white bg-gradient-to-tr from-blue-500  to-gray-700 animate-pulse
+            hover:bg-gradient-to-bl hover:from-blue-700 hover:to-blue-500"
             onClick={() =>
               window.open("https://linkedin.com/in/rafaelfarsura", "_blank")
             }
           >
-            <FileText className="mr-2 h-5 w-5 group-hover:animate-bounce " />
+            <FileText className="mr-2 h-5 w-5 group-hover:animate-bounce" />
             Ver Currículo
           </Button>
           <Button
             size="lg"
+            className="group bg-green-600 text-white bg-gradient-to-tr from-green-500 to-gray-700 animate-pulse hover:bg-gradient-to-bl hover:from-green-700 hover:to-green-500"
+            onClick={() =>
+              window.open("https://wa.me/+5511955003873", "_blank")
+            }
+          >
+            <MessageCircleCodeIcon className="mr-2 h-5 w-5 group-hover:animate-ping" />
+            Enviar Mensagem
+          </Button>
+          <Button
+            size="lg"
+            className="group bg-gradient-to-tr from-red-500 via-pink-600 to-gray-700 text-white animate-pulse 
+  hover:bg-red-600 hover:from-none hover:to-none hover:animate-none transition-all duration-300"
+            onClick={() =>
+              window.open(
+                'https://mail.google.com/mail/?view=cm&fs=1&to=rafaelfarsura@gmail.com&su=Contato%20Profissional&body=Olá%20Rafael,%20gostaria%20de%20falar%20sobre...',
+                '_blank'
+              )
+            }
+          >
+            <MailPlusIcon className="mr-2 h-5 w-5 group-hover:animate-bounce" />
+            Enviar E-mail
+          </Button>
+          <Button
+            size="lg"
             variant="outline"
-            className="group text-black hover:bg-gradient-to-bl
-            hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
+            className="group text-black bg-gradient-to-bl from-slate-700 to-orange-600 text-white animate-pulse hover:bg-gradient-to-bl hover:from-slate-700 hover:to-orange-500"
             onClick={() =>
               window.open("https://github.com/rafael-farsura", "_blank")
             }
           >
-            <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
+            <Github className="mr-2 h-5 w-5 group-hover:animate-spin" />
             GitHub
           </Button>
         </div>
-        <div className="mt-16 text-center">
-          <h2 className="text-2xl font-heading mb-4 animate-pulse">
+
+        {/* Projetos */}
+        <div className="pt-10 border-t border-muted">
+          <h2 className="text-3xl font-heading mb-10 animate-pulse">
             Projetos em Destaque
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <Card
-              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-              onClick={() =>
-                window.open(
-                  "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api",
-                  "_blank"
-                )
-              }
-            >
-              <CardHeader>
-                <Image
-                  alt="Project preview"
-                  src="/Images/placeholder.png"
-                  width={400}
-                  height={200}
-                  className="rounded-lg hover:scale-105 transition-transform duration-300"
-                />
-                <CardTitle className="mt-4">Coinverting API</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Projeto de conversão de moedas reais e ficticias em tempo real
-                  com lastro em USD.
-                </p>
-              </CardContent>
-              <div className="mt-5">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="group text-black hover:bg-gradient-to-bl
-            hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
-                >
-                  <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
-                  GitHub
-                </Button>
-              </div>
-            </Card>
-            <Card
-              className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 w-full"
-              onClick={() =>
-                window.open("https://taskpay.vercel.app/", "_blank")
-              }
-            >
-              <CardHeader>
-                <Image
-                  alt="Project preview"
-                  src="/Images/task-pay-logo.png"
-                  width={600}
-                  height={300}
-                  className="rounded-lg hover:scale-105 transition-transform duration-300"
-                />
-                <CardTitle className="mt-4">Task Pay</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  TaskPay é uma plataforma descentralizada que conecta
-                  freelancers a contratantes com pagamentos automatizados via
-                  Smart Contracts. Cada etapa (milestone) de um projeto é
-                  liberada somente após aprovação, oferecendo segurança e
-                  previsibilidade para ambas as partes.
-                </p>
-              </CardContent>
-              <div className="mb-5">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="group text-black hover:bg-gradient-to-bl
-            hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/rafael-farsura/TaskPay",
-                      "_blank"
-                    )
-                  }
-                >
-                  <Github className="mr-2 h-5 w-5 group-hover:animate-spin transition-transform duration-300" />
-                  GitHub
-                </Button>
-              </div>
-            </Card>
 
-            {/* <Card className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-              <CardHeader>
-                <Image
-                  alt="Project preview"
-                  src="/Images/placeholder.png"
-                  width={400}
-                  height={200}
-                  className="rounded-lg hover:scale-105 transition-transform duration-300"
-                />
-                <CardTitle className="mt-4">NFT Marketplace</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Marketplace de NFTs com integração blockchain
-                </p>
-              </CardContent>
-            </Card> */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center">
+            {[
+              {
+                title: "Instituto Aion do Brasil",
+                img: "/Images/aion-logo.png",
+                desc: "Plataforma fintech completa para investimentos e tokenização de ativos financeiros, integrando Web2 e Web3 com NestJS, PostgreSQL e Smart Contracts em Solidity (ERC20, ERC1400, ERC3643).",
+                link: "https://institutoaionbrasil.com/",
+              },
+              {
+                title: "RBAC Users API",
+                img: "/Images/rbac-logo.png",
+                desc: "Aplicação completa de Controle de Acesso Baseado em Papéis (RBAC) construída com Spring Boot + PostgreSQL + Docker Compose.",
+                link: "https://github.com/Rafael-Farsura/java.rbac-api",
+              },
+              {
+                title: "Coinverting API",
+                img: "/Images/coinverting-logo.png",
+                desc: "API de conversão de moedas reais e fictícias em tempo real, totalmente containerizada com Docker. Permite converter valores, gerenciar moedas personalizadas (CRUD) e acompanhar taxas de câmbio com base no USD.",
+                link: "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api",
+              },
+              {
+                title: "Task Pay",
+                img: "/Images/task-pay-logo.png",
+                desc: "!!!!!!!!!!!!  Projeto pausado !!!!!!!!!!! \n Plataforma descentralizada que conecta freelancers a contratantes com pagamentos automatizados via Smart Contracts.",
+                link: "https://taskpay.vercel.app/",
+              },
+              {
+                title: "Em breve ... ",
+                img: "/Images/placeholder.png",
+                desc: "Projeto em desenvolvimento",
+                link: "https://rafaelfarsura.vercel.app/",
+              },
+              {
+                title: "Em breve ...",
+                img: "/Images/placeholder.png",
+                desc: "Projeto em desenvolvimento",
+                link: "https://rafaelfarsura.vercel.app/",
+              },
+
+            ].map((project) => (
+              <Card
+                key={project.title}
+                className="hover:shadow-xl transition-all duration-300 hover:-translate-y-2 cursor-pointer flex flex-col justify-between max-w-sm"
+                onClick={() => window.open(project.link, "_blank")}
+              >
+                <CardHeader>
+                  <Image
+                    alt={project.title}
+                    src={project.img}
+                    width={400}
+                    height={200}
+                    className="rounded-lg hover:scale-105 transition-transform duration-300"
+                  />
+                  <CardTitle className="mt-4">{project.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{project.desc}</p>
+                </CardContent>
+                <div className="flex justify-center pb-6">
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="group text-black hover:bg-gradient-to-bl hover:from-slate-700 hover:to-orange-600 hover:text-white hover:animate-pulse"
+                  >
+                    <Github className="mr-2 h-4 w-4 group-hover:animate-spin" />
+                    GitHub
+                  </Button>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
