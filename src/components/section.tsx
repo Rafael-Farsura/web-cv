@@ -236,8 +236,16 @@ export function Section() {
               {
                 title: "Instituto Aion do Brasil",
                 img: "/Images/aion-logo.png",
-                desc: "Plataforma fintech completa para investimentos e tokenização de ativos financeiros, integrando Web2 e Web3 com NestJS, PostgreSQL e Smart Contracts em Solidity (ERC20, ERC1400, ERC3643).",
+                desc: "Plataforma fintech completa para investimentos e tokenização de ativos financeiros, \
+                integrando Web2 e Web3 com NestJS, PostgreSQL e Smart Contracts em Solidity (ERC20, ERC1400, ERC3643).",
                 link: "https://institutoaionbrasil.com/",
+              },
+              {
+                title: "Asaas Gateway API ",
+                img: "/Images/logo-asaas.png",
+                desc: "Integração segura e escalável com a API do Asaas, desenvolvida em NestJS e TypeScript.\n \
+                Gerencia clientes, tokens e transações financeiras com criptografia RSA, DDD/Clean Architecture e PostgreSQL.",
+                link: "https://github.com/Rafael-Farsura/asaas-gateway-api",
               },
               {
                 title: "RBAC Users API",
@@ -248,20 +256,16 @@ export function Section() {
               {
                 title: "Coinverting API",
                 img: "/Images/coinverting-logo.png",
-                desc: "API de conversão de moedas reais e fictícias em tempo real, totalmente containerizada com Docker. Permite converter valores, gerenciar moedas personalizadas (CRUD) e acompanhar taxas de câmbio com base no USD.",
+                desc: "API de conversão de moedas reais e fictícias em tempo real, totalmente containerizada com Docker. \
+                Permite converter valores, gerenciar moedas personalizadas (CRUD) e acompanhar taxas de câmbio com base no USD.",
                 link: "https://github.com/Rafael-Farsura/challenge-bravo/tree/coinverting_Api",
               },
               {
                 title: "Task Pay",
                 img: "/Images/task-pay-logo.png",
-                desc: "!!!!!!!!!!!!  Projeto pausado !!!!!!!!!!! \n Plataforma descentralizada que conecta freelancers a contratantes com pagamentos automatizados via Smart Contracts.",
+                desc: "!!!!!!!!!!!!  Projeto pausado !!!!!!!!!!! \n Plataforma descentralizada que conecta freelancers \
+                 a contratantes com pagamentos automatizados via Smart Contracts.",
                 link: "https://taskpay.vercel.app/",
-              },
-              {
-                title: "Em breve ... ",
-                img: "/Images/placeholder.png",
-                desc: "Projeto em desenvolvimento",
-                link: "https://rafaelfarsura.vercel.app/",
               },
               {
                 title: "Em breve ...",
