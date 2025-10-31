@@ -34,13 +34,13 @@ export function Header() {
       <div className="flex items-center gap-10">
         <nav className="hidden items-center gap-10 md:flex justify-end">
           <NavItem
-            href="https://linkedin.com/in/rafaelfarsura"
-            label="About"
+            href="#projetos"
+            label="Projetos"
             className="hover:animate-pulse hover:text-lg"
           />
           <NavItem
-            href="https://linkedin.com/in/rafaelfarsura"
-            label="Docs"
+            href="/api/cv"
+            label="Baixar CV"
             className="hover:animate-pulse hover:text-lg"
           />
           <Button
@@ -48,8 +48,8 @@ export function Header() {
             className="group bg-orange-500 text-white hover:text-lg hover:bg-gradient-to-tr
             hover:from-orange-500 hover:to-gray-700 hover:text-white hover:animate-pulse"
           >
-            <Link href="http://wa.me/5521995567817" className="cursor-pointer">
-              Contact me
+            <Link href="http://wa.me/5511955003873" className="cursor-pointer">
+              Contato
             </Link>
           </Button>
         </nav>

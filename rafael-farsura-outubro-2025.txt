@@ -1,0 +1,113 @@
+                                                Rafael Farsura
+   rafaelfarsura.vercel.app • rafaelfarsura@gmail.com • linkedin.com/in/rafaelfarsura • github.com/Rafael-Farsura
+                                            +55 11 95500-3873 • São Paulo – SP
+
+
+
+
+Resumo              Desenvolvedor Full Stack Pleno com foco em Back-end (Node.js e NestJS) e sólida experiência
+                    no desenvolvimento de integrações financeiras, incluindo Asaas e Stripe. Especialista em ar-
+                    quitetura de microserviços, APIs RESTful e soluções escaláveis para fintechs e plataformas de
+                    pagamento. Atuação prática (hands-on) em ambientes corporativos, com domı́nio em contain-
+                    ers Docker, PostgreSQL e práticas de segurança, automação e observabilidade.
+
+Competências Técnicas
+                    Linguagens e Frameworks: TypeScript, JavaScript, Node.js, NestJS, React, Next.js, Express,
+                    Java, Spring Boot, C++, TypeORM, Prisma. Bancos de Dados: PostgreSQL, MySQL, Redis.
+                    Integrações e Pagamentos: Asaas API, Stripe API, EFI API, Webhooks, OAuth2, JWT, Crip-
+                    tografia RSA. Infraestrutura e DevOps: Docker, Docker Compose, Git, GitHub Actions, Grafana,
+                    Prometheus, Helm. Arquitetura: DDD, Clean Architecture, SAGA, SOLID, TDD, CI/CD. Metodolo-
+                    gias ágeis: Scrum e Kanban.
+
+Experiência Profissional
+                    Instituto Aion do Brasil                                       IT Manager & Full Stack Developer
+                    Maio 2025 – Atual
+
+
+                    Atuação hands-on na concepção e desenvolvimento do Aion Bank - backend, infraestrutura que
+                    consolida microserviços voltados à integração corporativa com a API do Asaas, API do Stripe
+                    e tokenização RWA (clientes, pagamentos, tokens, carteiras e transferências). O projeto foi
+                    implementado com NestJS, Prisma, PostgreSQL e Turborepo, seguindo princı́pios de arquitetura
+                    limpa e DDD.
+
+
+                    Principais entregas:
+
+                      •   Criação do monorepo backend (Aion Bank) com múltiplos serviços distribuı́dos e pacotes
+                          compartilhados;
+                      •   Implementação de gateways e camadas de autenticação (OpenResty/Nginx + Lua) com
+                          tokens RSA e JWT;
+                      •   Desenvolvimento dos microserviços Asaas API, Stripe API, com criptografia ponta a ponta
+                          e auditoria de logs;
+                      •   Integrações com Asaas e Stripe para pagamentos via PIX, cartões, boletos e links. Criação
+                          de contas, cobranças, split de pagamentos;
+                      •   Conversibilidade de moedas internacionalmente com taxas mı́nimas, juntamente com um
+                          alto padrão de segurança e escalabilidade elevada.
+                      •   Criação do microserviço Tokiz API para conversão de moedas e taxas financeiras em NestJS
+                          e PostgreSQL;
+                      •   Arquitetura e desenvolvimento do projeto TOKIZ, sistema de tokenização em blockchain
+                          de ativos RWA, criação de stablecoin, liquidity pool, sistema de gerenciamento de fundos
+                          e segurança baseada em RBAC, incluindo Factory strategies para criação dos contratos em
+                          com Hardhat, Foundy, Solidity, RSK Blockchain, T-REX, seguindo os protocolos ERC-3400,
+                          ERC-3643, ERC-20, KMS, sendo utilizados pelo backend em NestJS, Express e PostgreSQL.
+                          ;
+                   •   Pipeline CI/CD automatizado com GitHub Actions, observabilidade com Grafana e Prometheus,
+                       e containerização completa da arquitetura via Docker / docker-compose.
+
+                  Deep Seed Solutions                                                         Software Developer
+                  Novembro 2022 – Fevereiro 2024
+
+                  Desenvolvimento de sistemas cientı́ficos e industriais para o setor de energia. Atuação no pro-
+                  jeto FLOCO IA, módulo CAD para modelagem de reservatórios submarinos, e no Karoon JIP
+                  Phase 2, com foco em integração de dados e automação para engenharia offshore.
+
+                  Principais entregas:
+
+                   •   Desenvolvimento full stack em C++/Qt Creator e Node.js para integração entre mode-
+                       lagem CAD e backend;
+                   •   Criação de servidores internos para visualização 3D e armazenamento de dados geológicos;
+                   •   Correção de bugs, releases ;
+                   •   Automação de testes e suporte a infraestrutura de rede.
+
+                  Iventou                                                  Full Stack Developer (Freelance)
+                  Agosto 2024 – Setembro 2024
+                  Desenvolvimento de APIs RESTful e interfaces Next.js para gestão de eventos corporativos e
+                  sociais. Integração com gateways de pagamento, autenticação OAuth2 e infraestrutura em
+                  Docker.
+                  CELO Blockchain             Pesquisador Blockchain (Freelance) Julho 2024 – Outubro 2024
+                  Pesquisa sobre protocolos de stablecoins e liquidez na América Latina, com protótipos em
+                  Node.js e dashboards TradingView.
+
+
+
+Educação        Pós-Graduação em Gestão Ágil – P&P Management                   XP Educação (2024 – 2025)
+                  Graduação em Blockchain e Criptografia Digital                            IBMR (2022 – 2024)
+
+
+
+Certificações   Desenvolvimento de Ativos Reais (RWA) (NearX 2025); Plano de Desenvolvimento Indi-
+                  vidual (PDI) (XP Educação 2025); Compreendendo e aplicando a Soft Skills de Liderança
+                  Empática (XP educação 2025); Blockchain Developer (RootstockLabs 2025); Blockchain De-
+                  veloper (RSK Academy 2025); NestJS REST API (Udemy 2025); Blockchain & Smart Con-
+                  tracts (DIO 2024); Prog. em C++ (Udemy 2023); GUI com Qt (Udemy 2023); C/C++
+                  Completo (Udemy 2023); Blockchain c/ Node.js (Udemy 2023); Blockchain C++ (Study
+                  2023); Git (Udemy 2022); Scrum (Udemy 2022).
+
+
+
+Idiomas           Português (Nativo); Inglês (Fluente); Espanhol (Básico)
+
+Projetos Relevantes
+                  Asaas Gateway API — Microserviço corporativo para integração com a API do Asaas, implemen-
+                  tando autenticação segura, controle de tokens, pagamentos via PIX e cartão e monitoramento
+                  via Grafana e Prometheus.
+                  Coinverting API — API para conversão de moedas e simulação de taxas financeiras com NestJS,
+                  TypeORM, PostgreSQL e Docker, incluindo cache e testes de performance (K6).
+                  Emprego Social TISL — Plataforma completa de vagas de emprego (React + Node.js + Prisma
+                  + PostgreSQL). Desenvolvimento do back-end com autenticação JWT, CI/CD via GitHub Actions
+                  e deploy automatizado no GCP usando Docker, Terraform e Helm.
+Java RBAC API — API de controle de acesso e autenticação de usuários em Java (Spring Boot
++ JWT), voltada a gestão de perfis e permissões no ecossistema Aion.
+Tokiz — Plataforma de tokenização de ativos reais (RWA) em blockchain RSK, com auditoria
+on-chain e integração a gateways de pagamento e BaaS.
+
